@@ -2,7 +2,55 @@
 
 ## Overview
 
-This project is a Snake game implemented in Python using Pygame and enhanced with a reinforcement learning agent to play against. The AI agent uses a Deep Q-Network (DQN) approach to learn and improve its gameplay over time.
+The game consists of two snakes:
+1. **Player Snake (Green)**: Controlled by the player using keyboard inputs.
+2. **AI Snake (Blue)**: Controlled by an AI agent using reinforcement learning.
+
+Both snakes aim to eat the red rat that appears randomly on the board. Each time a snake eats a rat, it grows in length and earns a point. The game ends when a snake collides with the wall, itself, or the other snake. The first snake to reach a specified number of points wins the game.
+
+## Features
+
+- Human vs. AI gameplay.
+- AI-controlled snake using reinforcement learning (Q-learning with a neural network).
+- Dynamic game speed based on the current level.
+- Ability to pause, reset, save, and load game states.
+- Real-time statistics to monitor AI training progress.
+
+## How to Play
+
+### Controls
+- **Arrow Keys**: Control the player's snake.
+- **Buttons**: Control the game state (Start, Reset, Save State, Load State, Exit, Pause, Statistics).
+
+### Buttons
+- **Start**: Starts the game.
+- **Reset**: Resets the game to its initial state.
+- **Save State**: Saves the current game state.
+- **Load State**: Loads a previously saved game state.
+- **Exit**: Exits the game.
+- **Pause**: Pauses the game.
+- **Statistics**: Displays real-time training statistics of the AI snake.
+
+## Statistics Function
+
+The statistics function provides real-time insights into the AI snake's training progress. It helps players and developers understand how the AI is learning and improving over time. The statistics are displayed using matplotlib and include the following plots:
+
+1. **Training Loss**: Displays the loss value of the AI's neural network over episodes, showing how the model's accuracy improves.
+2. **Reward History**: Shows the rewards earned by the AI snake over episodes, indicating the success rate of the AI's actions.
+3. **Moving Average of Reward**: Plots the moving average of rewards over a window of 50 episodes, providing a smoothed view of the AI's performance trend.
+4. **Exploration Rate**: Displays the exploration rate over time, showing how the AI gradually shifts from exploration to exploitation as it learns.
+5. **Cumulative Rewards**: Shows the cumulative rewards earned by the AI snake, indicating its overall progress.
+6. **Predicted Performance**: Plots the predicted performance of the AI over a window of 100 episodes and highlights the best performance achieved.
+
+### How It Helps
+
+The statistics function helps in the following ways:
+- **Performance Monitoring**: By observing the training loss and reward history, players can see how well the AI is learning and adapting to the game.
+- **Trend Analysis**: The moving average of rewards provides a clearer view of the AI's performance trends, helping to identify periods of improvement or decline.
+- **Exploration vs. Exploitation**: The exploration rate plot shows how the AI balances exploration (trying new actions) and exploitation (choosing the best-known actions), which is crucial for effective learning.
+- **Progress Tracking**: The cumulative rewards plot gives an overall sense of the AI's progress and success in the game.
+
+## A GLIMPSE
 
 ![Snake Game Screenshot](Screenshots/Screenshot_3.png)  
 
