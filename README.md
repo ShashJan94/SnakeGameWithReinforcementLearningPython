@@ -4,7 +4,7 @@
 
 This project is a Snake game implemented in Python using Pygame and enhanced with a reinforcement learning agent to play against. The AI agent uses a Deep Q-Network (DQN) approach to learn and improve its gameplay over time.
 
-![Snake Game Screenshot](path/to/screenshot.png)  
+![Snake Game Screenshot](Screenshots/Screenshot_3.png)  
 
 ## Features
 
