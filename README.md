@@ -39,10 +39,6 @@ This project is a Snake game implemented in Python using Pygame and enhanced wit
     python main.py
     ```
 
-## Watch the Game in Action
-
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
-
 ## Reinforcement Learning Methods
 
 The AI snake in this game uses a Deep Q-Network (DQN) to learn from its actions. Here’s a brief explanation of the method:
